@@ -1,0 +1,22 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open 千恋万花.html",
+            "file": "d:\\Code\\千恋万花调查表\\千恋万花.html"
+        }
+    ]
+}
