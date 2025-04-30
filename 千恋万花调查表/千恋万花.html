@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">柚子的调查表格</h1>
+      <h2>千恋*万花</h2>
+      <p id="description">Ciallo～(∠・ω< )⌒★</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">请输入你的名字：
+          <input id="name" type="text" placeholder="请输入名字" required />
+        </label>
+        <label id="email-label" for="email">请填写你的邮箱： <input id="email" type="email" placeholder="请输入邮箱"  required /></label>
+        <label id="number-label" for="number">请输入你的年龄： <input id="number" type="number" min="18" max="50" placeholder=" "  required /></label>
+      </fieldset>
+      <fieldset>您的性别是：
+        <label for="man">
+          <input id="man" name="sex" type="radio" value="man" />男
+        </label>
+        <label>
+          <input id="women" name="sex" type="radio" value="woman" />女
+        </label>
+        <label>
+          <input id="else" name="sex" type="radio" value="else" />武装直升机
+        </label>
+        <label>
+          <input id="else2" name="sex" type="radio" value="else2" checked />沃尔玛塑料袋
+        </label>
+      </fieldset>
+      <fieldset>
+        你喜欢哪个角色?
+        <select id="dropdown">
+          <option value="">选择角色</option>
+          <option value="1">朝武芳乃</option>
+          <option value="2">常陆茉子</option>
+          <option value="3">丛雨</option>
+          <option value="4">蕾娜·列支敦瑙尔</option>
+          <option value="5">鞍马小春</option>
+          <option value="6">马庭芦花</option>
+          <option value="7">鞍马廉太郎</option>
+          <option value="8">驹川美津叶</option>
+          <option value="9">朝武安晴</option>
+          <option value="10">鞍马玄十郎</option>
+        </select>
+        可以说说你喜欢这个角色的什么吗？
+        <label for="merit">
+          <textarea id="merit" name="merit">想写些什么就写什么吧！</textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        请问您是如何了解到千恋万花的？
+        <label for="friend"><input type="checkbox" id="friend" value="1" / >朋友推荐</label>
+        <label for="oneself"><input type="checkbox" id="oneself" value="2" / >自行发掘</label>
+        <label for="internet"><input type="checkbox" id="internet" value="3" / >互联网平台发现</label>
+        <label for="hello"><input type="checkbox" id="hello" value="4" / >Ciallo～(∠・ω< )⌒★</label>
+      </fieldset>
+      <fieldset class="bottom">
+        <input type="submit" id="submit" value="提交" />
+      </fieldset>
+    </form>
+</body>
+</html>
