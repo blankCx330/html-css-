@@ -1,0 +1,59 @@
+#image{
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+div.background {
+  margin: auto;
+  width: 80%; 
+  padding-bottom:50px; 
+  background-color: rgb(175 238 238);
+}
+
+div.title {
+  text-align: center;
+}
+
+figure {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  max-width: 300px;
+}
+
+
+figcaption {
+  padding: 3px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #000000;
+}
+
+span.xiatuo {
+  font-style: italic;
+  padding-right: 0.1rem; 
+}
+
+h2{
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+ p.end {
+   padding: 0;
+   padding-left: 2rem;
+ }
+
+ div.end {
+   text-align: center;
+   border-top: 3px solid #000000;
+ }
+div.end p {
+  margin: 0;
+  padding: 0;
+}

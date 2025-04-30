@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>目录</header>
+      <ul>
+        <li><a href="#Introduction">引言</a></li>
+        <li><a href="#c_and_cpp">C语言和C++</a></li>
+        <li><a href="#hello_world">Hello World</a></li>
+        <li><a href="#variables">变量</a></li>
+        <li><a href="#data_types">数据类型</a></li>
+        <li><a href="#reference">参考</a></li>
+        <li class="hide"><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li class="hide"><a class="nav-link" href="#c_and_cpp">c_and_cpp</a></li>
+        <li class="hide"><a class="nav-link" href="#hello_world">hello_world</a></li>
+        <li class="hide"><a class="nav-link" href="#variables">variables</a></li>
+        <li class="hide"><a class="nav-link" href="#data_types">data_types</a></li>
+        <li class="hide"><a class="nav-link" href="#reference">reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header class="hide">Introduction</header>
+        <header>引言</header>
+        <artilce>
+          <p>C语言是一种较早的程序设计语言，诞生于1972年的贝尔实验室。1972 年，Dennis Ritchie 设计了C语言，它继承了B语言的许多思想，并加入了数据类型的概念及其他特性。 尽管C 语言是与 UNIX 操作系统一起被开发出来的，但它不只支持UNIX。C是一种通用（广泛可用）的编程语言。</p>
+          <p>C语言是一门面向过程的计算机编程语言，与C++、C#、Java等面向对象编程语言有所不同。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%-20%。因此，C语言可以编写系统软件.</p>
+        </article>
+      </section>
+      <section class="main-section" id="c_and_cpp">
+        <header class="hide">c_and_cpp</header>
+        <header>C语言和C++</header>
+        <artilce>
+          <p>​C语言与C++的主要区别在于编程范式与功能扩展：C语言是面向过程的编程语言，强调函数调用和步骤分解，适合底层开发（如操作系统、嵌入式系统）；而C++在C的基础上扩展为多范式语言，支持面向对象（类、继承、多态）、泛型编程（模板）等特性，更适合构建复杂系统（如游戏引擎、图形界面）</p>
+          <p>C++是C语言的超集，在语法层面高度兼容C语言，保留了C的高效性与底层控制能力，同时通过面向对象（类、继承、多态）、泛型编程（模板）等特性扩展了编程范式</p>
+        </article>
+      </section>
+      <section class="main-section" id="hello_world">
+        <header class="hide">hello_world</header>
+        <header>Hello World</header>
+        <artilce>
+          <p>当你下载好了编译器之后就可以着手准备第一个程序</p>
+          <p>程序代码如下：</p>
+          <code
+          >#include &lt;stdio.h&gt;<br>
+          int main(){<br>
+          printf("hello world!");<br>
+          return 0;<br>
+          }
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="variables">
+        <header class="hide">variables</header>
+        <header>变量</header>
+        <artilce>
+          <p>C语言中的变量是程序中存储数据的基本单元，通过声明与类型定义为特定数据类型（如整型、int、浮点型float、字符型char等）分配内存空间。变量需在使用前声明，可初始化赋值（如int age = 25;），其作用域分为局部变量​（限于函数或代码块内部）和全局变量​（程序全局可见），生命周期则取决于存储类别（如自动变量随函数调用结束销毁，静态变量static持久存在）。
+
+</p>
+          <p>变量的数据类型决定存储内容及内存大小（如int占4字节，char占1字节），合理选择类型可提升效率；命名规则需以字母/下划线开头，区分大小写，并避免关键字。使用时需注意作用域冲突​（如局部变量覆盖全局变量）和初始化必要性​（未初始化变量可能含随机值，导致程序异常）</p>
+        </article>
+      </section>
+      <section class="main-section" id="data_types">
+        <header class="hide">data_types</header>
+        <header>数据类型</header>
+        <artilce>
+          <p>C语言中的数据类型主要分为基本类型、派生类型和用户自定义类型</p>
+          <ul>
+            一、基本数据类型
+            <li>整型 int <br><code>int i = 0;</code></li>
+            <li>字符型 char <br><code>char c = 'char';</code></li>
+            <li>浮点型 float、double <br><code>float f = 1.0;</code><br><code>double d = 1.2;</code></li>
+            <li>空类型 void</li>
+          </ul>
+          <ul>二、派生数据类型
+            <li>指针 * <br><code>int* n = NULL;</code></li>
+            <li>数组 [] <br><code>a[2] = {0, 1, 2}</code></li>
+            <li>结构体 struct <br><code>struct Point {
+    int x;
+    int y;
+};</code></li>
+            <li>联合体 union <br><code>union Number {
+    int i;
+    float f;
+};</code></li>
+          </ul>
+          <ul>三、用户自定义类型
+            <li>枚举 enum <br><code>enum Weekday {Mon, Tue, Wed};</code></li>
+            <li>类型别名 typedef <br><code>typedef struct Point Coordinate;</code></li>
+          </ul>
+          <p>因为只是练习所以便不过多书写</p>
+        </article>
+      </section>
+      <section class="main-section" id="reference">
+        <header class="hide">reference</header>
+        <header>参考</header>
+        <p>本技术文档页中资料均来自<a href="https://www.baidu.com/?tn=15007414_20_dg" >百度</a>和<a href="https://hunyuan.tencent.com/">元宝AI</a></p>
+      </section>
+    </main>
+  </body>
+</html>

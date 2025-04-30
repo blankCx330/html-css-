@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95)
+}
+
+#header-img{
+  padding: 1rem;
+  width: 30vw
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav li{
+  padding: 0 3rem;
+  font-size: 1.5rem;
+}
+
+a{
+text-decoration: none;
+color: #000;
+}
+
+a:hover{
+  border-radius: 5px;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#email{
+  height: 2rem;
+  width: 25rem;
+  border: 2px solid #555;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+#submit {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+.video{
+  margin: auto;/*本元素居中*/
+  display: flex;
+justify-content: center;/*元素子类居中*/
+  padding: 1.5rem 0;
+}
+.features{
+  padding: 2rem 15%;
+}
+
+.features section{
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+}
+
+.Introduction p{
+padding-bottom: 1rem;
+text-align: justify;
+min-width: 6rem;
+}
+
+.Introduction .head{
+  font-size: 3rem;
+  float: left;
+}
+
+.details{
+  padding: 0 5%;
+  padding-bottom: 20px;
+}
+
+.details h2{
+  padding-top: 1.3rem;
+  padding-left: 0.5rem;
+}
+
+.details-img{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow-x: scroll;
+  width: 90%;
+  margin: auto;
+}
+
+.details img{
+  max-height: 90%;
+  padding: 5px;
+  margin: auto;
+}
+
+footer{
+  background-color: #bbb;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+
+footer li{
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 600px) and (max-width: 815px){
+  nav li{
+    padding: 1.2rem;
+  }
+    .details h2{
+    font-size: 1.2rem
+  }
+  .details-img{
+    display: block;
+    margin: auto;
+    overflow-x: auto;
+  }
+  .details-img img{
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px){
+  body{
+    font-size: 86%;
+  }
+  header{
+    display: block;
+    justify-content: center;
+  }
+  #header-img{
+    min-width: 15rem;
+  }
+  .logo{
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    margin-bottom: -1.5rem;;
+  }
+  nav ul{
+    display: block;
+    list-style: none;
+    text-align: center;
+  }
+  nav li{
+    font-size: 1.2rem;
+  }
+  iframe{
+    min-width: 450px;
+  }
+  .features section{
+    display: block;
+  }
+  .Introduction .head{
+    font-size: 2rem;
+    float: left;
+    margin-top: -0.5rem;
+  }
+  .Introduction p{
+    padding: 0.5rem;
+    text-align: justify;
+  }
+  .details h2{
+    font-size: 1.2rem
+  }
+  .details-img{
+    display: block;
+    margin: auto;
+    overflow-x: auto;
+  }
+  .details-img img{
+    max-width: 90%;
+  }
+}
